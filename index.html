@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Задание 1
+        // Создать переменные num1, num2 которые пользователь вводит с клавиатуры. Проверьте, что переменная num1 равна или меньше 1, а переменная num2 больше или равна 3.
+        let num1=Number(prompt("Введите число 1"))
+        let num2=Number(prompt("Введите число 2"))
+        if (num1<=1 && num2>=3) {
+          console.log("Числа подходят") 
+        } else {
+            console.log("Числа не подходят") 
+        }
+
+        // Задание 2
+        // Перепишите код к тернарному оператору
+        let test = true;
+        test === true ? console.log('+++') : console.log('---')
+
+        // Задание 3
+        // В переменной day лежит какое-то число из интервала от 1 до 31. Определите в какую декаду месяца попадает это число
+        let day = Number(prompt("Введите число от 1 до 31"))
+        if (day>=1 && day<=10) {
+            alert(`Число ${day} находится в первой декаде месяца`)
+        } else if (day>=11 && day<=20) {
+            alert(`Число ${day} находится во второй декаде месяца`)
+        } else if (day>=21 && day<=31) {
+            alert(`Число ${day} находится в третьей декаде месяца`)
+        } else {
+            alert('Ой, таких чисел нет в месяце')
+        }
+        
+    </script>
+</body>
+</html>
